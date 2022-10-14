@@ -1,0 +1,224 @@
+@import url(/vars.css);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'DM Sans', sans-serif;
+}
+
+main {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 95vh;
+	font-size: 1.8rem;
+	background-color: var(--cream);
+}
+
+.content-container {
+	display: grid;
+	place-items: center;
+	margin: 0 16px;
+	width: 90%;
+	height: auto;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	width: 280px;
+	height: 75px;
+	color: white;
+	border-radius: 8px;
+	background-color: var(--soft-red);
+}
+
+.card-container .card-right {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.card-container .card-right span:first-child {
+	font-size: 1.2rem;
+	margin-bottom: 4px;
+	color: var(--cream);
+}
+
+.card-container .card-right span:nth-child(2) {
+	font-weight: 700;
+	color: var(--very-pale-orange);
+}
+
+.card-container .logo {
+	width: 50px;
+	height: 30px;
+}
+
+.card-container .logo img {
+	height: 30px;
+}
+
+.content-container .chart-container {
+	width: 280px;
+	height: auto;
+	padding: 16px;
+	margin-top: 12px;
+	border-radius: 8px;
+	background-color: var(--very-pale-orange);
+}
+.content-container .chart-container p:first-child {
+	font-weight: bolder;
+	color: var(--dark-brown);
+}
+
+.content-container .chart-container .bar-wraper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	height: 200px;
+}
+
+.chart-container .bar-wraper .bar-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 28px;
+	height: 100%;
+}
+
+
+
+.chart-container .bar-wraper .bar-body div {
+	width: 100%;
+	height: 60%;
+	border-radius: 2px;
+	background-color: var(--soft-red);
+	cursor: pointer;
+}
+
+.chart-container .bar-wraper .bar-body div:hover {
+	opacity: 70%;
+}
+
+#monday {
+	height: 20%;
+}
+
+#thuesday {
+	height: 45%;
+}
+
+#wensday {
+	height: 65%;
+	background-color: var(--cyan);
+}
+
+#thrusday {
+	height: 38%;
+}
+
+#friday, #sunday {
+	height: 30%;
+}
+
+#saturday {
+	height: 58%;
+}
+
+.chart-container .bar-wraper .bar-body span {
+	margin-top: 4px;
+	font-size: 1rem;
+	color: var(--medium-brown);
+}
+
+.chart-container .chart-container-divicion {
+	width: 100%;
+	height: 2px;
+	margin: 16px 0;
+	background-color: var(--cream);
+}
+
+.chart-container .total-by-month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chart-container .total-by-month .total-by-month-left p:first-child {
+	margin-bottom: 4px;
+	font-size: 1.2rem;
+	color: var(--medium-brown);
+}
+
+.chart-container .total-by-month .total-by-month-left p:last-child {
+	font-weight: 700;
+	font-size: 24px;
+	color: var(--dark-brown);
+}
+
+.chart-container .total-by-month .total-by-month-right {
+	text-align: right;
+	font-size: 1.2rem;
+}
+
+.chart-container .total-by-month .total-by-month-right p:first-child {
+	font-weight: 700;
+	color: var(--dark-brown);
+}
+
+.chart-container .total-by-month .total-by-month-right p:last-child {
+	color: var(--medium-brown);
+}
+
+footer {
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 5vh;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: var(--dark-brown);
+	background-color: var(--medium-brown);
+}
+
+footer .attribution a {
+	text-decoration: none;
+	color: var(--cyan);
+}
+
+@media screen and (min-width: 1024px) {
+	main {
+		background-image: url(https://images.pexels.com/photos/5561915/pexels-photo-5561915.jpeg);
+	}
+
+	.content-container {
+		place-content: center;
+		width: 70%;
+		height: 85%;
+		margin: 0;
+		background-color: var(--cream);
+		box-shadow: 4px 4px 20px 4px var(--dark-brown);
+	}
+
+	.card-container {
+		width: 350px;
+	}
+
+	.content-container .chart-container {
+		width: 350px;
+	}
+
+	.chart-container .bar-wraper .bar-body {
+		width: 32px;
+	}
+}
